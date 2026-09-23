@@ -38,7 +38,6 @@ def main() -> None:
         try:
             user_input = input(f"[{vfs_name}] $ ")
         except EOFError:  
-            # Корректная обработка прерывания (Ctrl+D или Ctrl+C)
             break
         
         parts = user_input.strip().split()
